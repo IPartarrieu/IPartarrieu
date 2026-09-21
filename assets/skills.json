@@ -1,0 +1,13 @@
+{
+  "title": "Skill Radar",
+  "_comment": "Self-rated, 0-100. Edit these and the Charts workflow redraws the radar.",
+  "axes": [
+    { "label": "Modelación Geofísica",    "value": 88 },
+    { "label": "Python",                  "value": 82 },
+    { "label": "MATLAB",                  "value": 85 },
+    { "label": "Análisis Estadístico",    "value": 80 },
+    { "label": "Problemas Inversos",      "value": 78 },
+    { "label": "Climatología",            "value": 75 },
+    { "label": "ArcGIS / QGIS",           "value": 65 }
+  ]
+}

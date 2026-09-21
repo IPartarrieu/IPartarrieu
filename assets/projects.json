@@ -1,0 +1,21 @@
+{
+  "_comment": "Featured repos, in README order. Stars/forks/language come live from the API on every run; the description here overrides the repo's GitHub description.",
+  "projects": [
+    {
+      "repo": "H2V-Module",
+      "description": "Módulo de simulación en Python para almacenamiento de hidrógeno verde en sistemas híbridos de energía renovable (HRES)."
+    },
+    {
+      "repo": "Okada-2D",
+      "description": "Modelo analítico de deformación de Okada en 2D aplicado a fallas geológicas, con demo interactiva en Streamlit."
+    },
+    {
+      "repo": "Empirical-Orthogonal-Function-EOF-",
+      "description": "Análisis EOF de la variabilidad conjunta entre la isoterma 0°C y la temperatura superficial, por estación del año."
+    },
+    {
+      "repo": "Analisis-de-Datos-Oceanograficos-Magallanes",
+      "description": "Clusterización de variables biogeoquímicas en el Pacífico sur (Magallanes), para el Instituto CEQUA."
+    }
+  ]
+}

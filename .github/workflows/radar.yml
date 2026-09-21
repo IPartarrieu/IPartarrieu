@@ -1,0 +1,57 @@
+name: Radares y tarjetas
+
+on:
+  schedule:
+    - cron: "30 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "assets/skills.json"
+      - "assets/domains.json"
+      - "assets/projects.json"
+      - "scripts/radar.py"
+      - "scripts/cards.py"
+      - ".github/workflows/radar.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Radar de habilidades
+        run: python scripts/radar.py --data assets/skills.json -o assets/radar
+
+      - name: Radar de áreas de aplicación
+        run: python scripts/radar.py --data assets/domains.json -o assets/radar-domains --values
+
+      # Tarjetas propias de estadísticas y de repos. Reemplazan a
+      # github-readme-stats / github-profile-trophy, cuyas instancias públicas
+      # compartidas a veces caen (503) o agotan su cuota (402).
+      # METRICS_TOKEN es un Personal Access Token con permiso de lectura sobre
+      # el grafo de contribuciones; sin él la tarjeta igual se genera, solo sin
+      # esos datos.
+      - name: Tarjetas de estadísticas y repos
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/cards.py \
+            --user "${{ github.repository_owner }}" \
+            --projects assets/projects.json \
+            --out assets
+
+      - name: Commit si hay cambios
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/radar-*.svg assets/card-*.svg
+          git diff --staged --quiet || git commit -m "chore: actualizar radares y tarjetas"
+          git push

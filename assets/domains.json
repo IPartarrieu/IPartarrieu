@@ -1,0 +1,12 @@
+{
+  "title": "Áreas de Aplicación",
+  "_comment": "Hand-authored domain radar. Values 0-100. Edit these and the Charts workflow redraws it.",
+  "axes": [
+    { "label": "Energías Renovables",   "value": 85 },
+    { "label": "Oceanografía",          "value": 78 },
+    { "label": "Meteorología",          "value": 82 },
+    { "label": "Docencia",              "value": 80 },
+    { "label": "Investigación",         "value": 84 },
+    { "label": "Procesamiento de Señales", "value": 70 }
+  ]
+}

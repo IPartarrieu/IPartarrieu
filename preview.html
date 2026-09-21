@@ -1,0 +1,187 @@
+<title>Vista previa: perfil GitHub</title>
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --border:#30363d;
+    --text:#c9d1d9; --muted:#8b949e; --heading:#e6edf3;
+    --accent:#4fb3d9; --accent-2:#2f9e8f; --link:#4fb3d9;
+  }
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){
+      --bg:#ffffff; --panel:#f6f8fa; --border:#d0d7de;
+      --text:#1f2328; --muted:#57606a; --heading:#1f2328;
+      --accent:#0e6b5c; --accent-2:#1a7f37; --link:#0969da;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0d1117; --panel:#161b22; --border:#30363d;
+    --text:#c9d1d9; --muted:#8b949e; --heading:#e6edf3;
+    --accent:#4fb3d9; --accent-2:#2f9e8f; --link:#4fb3d9;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:16px; line-height:1.6;
+    padding:40px 16px 64px;
+  }
+  .wrap{max-width:900px; margin:0 auto}
+  .note{
+    max-width:900px; margin:0 auto 28px; padding:12px 16px;
+    background:var(--panel); border:1px solid var(--border); border-radius:8px;
+    color:var(--muted); font-size:13px;
+  }
+  .center{text-align:center}
+  h2{
+    color:var(--heading); font-size:22px; font-weight:650;
+    border-bottom:1px solid var(--border); padding-bottom:8px; margin:40px 0 20px;
+  }
+  hr{border:none; border-top:1px solid var(--border); margin:32px 0}
+  a{color:var(--link); text-decoration:none}
+  a:hover{text-decoration:underline}
+  .badges{display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin:18px 0}
+  .badge{
+    display:inline-flex; align-items:center; padding:7px 14px; border-radius:6px;
+    background:var(--panel); border:1px solid var(--border);
+    font-size:12px; font-weight:700; letter-spacing:.02em; color:var(--heading);
+  }
+  .badge.linkedin{background:#0A66C2; color:#fff; border-color:#0A66C2}
+  .badge.status{background:var(--accent-2); color:#fff; border-color:var(--accent-2)}
+  .typing{
+    font-family:"JetBrains Mono",ui-monospace,Consolas,monospace;
+    font-size:22px; font-weight:600; color:var(--accent); text-align:center;
+    margin:18px 0 6px;
+  }
+  .typing .cursor{border-right:2px solid var(--accent); padding-right:2px}
+  ul{padding-left:22px; margin:16px 0}
+  li{margin:8px 0}
+  .icons{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin:18px 0}
+  .icons img{width:48px; height:48px}
+  .meta{color:var(--muted); font-size:14px; text-align:center; margin-top:6px}
+  .radar-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:24px;
+    justify-items:center; align-items:center; margin-top:16px;
+  }
+  .radar-grid img{max-width:100%; height:auto}
+  .stats-block{display:flex; flex-direction:column; align-items:center; gap:20px; margin-top:16px}
+  .stats-block img{max-width:100%; height:auto}
+  .cards-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:16px;
+  }
+  .cards-grid img{width:100%; height:auto; display:block}
+  .contact ul{list-style:none; padding:0}
+  .contact li{
+    display:flex; gap:8px; align-items:baseline; color:var(--muted); font-size:15px;
+  }
+  .contact li b{color:var(--heading); min-width:78px}
+  footer{
+    text-align:center; color:var(--muted); font-size:12px; margin-top:40px;
+    border-top:1px solid var(--border); padding-top:20px;
+  }
+  @media (max-width:640px){
+    .radar-grid, .cards-grid{grid-template-columns:1fr}
+    .typing{font-size:17px}
+  }
+</style>
+
+<div class="note">Vista previa local del README propuesto — así se vería renderizado en GitHub, con los datos y gráficos ya generados. No es el archivo final, es solo para revisar el diseño antes de subirlo.</div>
+
+<div class="wrap">
+
+  <div class="center">
+    <img src="assets/banner-dark.svg" alt="banner animado" style="width:100%;max-width:1180px;border-radius:14px">
+    <div class="typing" id="typing" style="margin-top:18px"><span id="typing-text"></span><span class="cursor">&nbsp;</span></div>
+
+    <div class="badges">
+      <span class="badge linkedin">🔗 LinkedIn</span>
+      <span class="badge">✉️ Correo</span>
+      <span class="badge">MetGeo</span>
+      <span class="badge status">Disponible para nuevas oportunidades</span>
+    </div>
+  </div>
+
+  <hr>
+
+  <h2>Sobre mí</h2>
+  <p>Geofísico y Magíster en Geofísica (mención en Modelación Geofísica, Universidad de Concepción). Trabajo de forma independiente junto a <a href="#">MetGeo</a>, desarrollando soluciones de modelación y análisis geofísico, con foco en resiliencia climática y sistemas de energía renovable.</p>
+  <ul>
+    <li>📄 <b>Primer autor</b> del artículo <i>"Energy Transition from Chilean Patagonia: Optimal Sizing of a Hybrid Renewable Energy System"</i>, <i>Journal of Energy Storage</i> (2026) — <a href="#">DOI</a>.</li>
+    <li>🎓 Docente en Universidad de Concepción (Meteorología Dinámica y Sinóptica) y Universidad Católica de Temuco (Física de la Atmósfera y el Océano).</li>
+    <li>🔋 Desarrollo de módulos de simulación de almacenamiento de hidrógeno verde para sistemas híbridos de energía renovable (HRES) — ver <code>H2V-Module</code>.</li>
+    <li>🌊 Análisis de datos oceanográficos y atmosféricos para proyectos de investigación (Instituto CEQUA, MERIC by ENERGIAMARINA).</li>
+  </ul>
+
+  <div class="center">
+    <h2>Stack técnico</h2>
+    <div class="icons">
+      <img src="https://skillicons.dev/icons?i=python,matlab,r,cpp,c,latex,bash&perline=7" alt="stack técnico">
+    </div>
+    <p class="meta"><b>Áreas:</b> modelación geofísica, problemas inversos, procesamiento de señales, climatología y meteorología, energías renovables no convencionales<br><b>Herramientas adicionales:</b> WRF, ArcGIS/QGIS, SQL</p>
+  </div>
+
+  <hr>
+
+  <div class="center">
+    <h2>Radar de habilidades</h2>
+    <div class="radar-grid">
+      <img src="assets/radar-dark.svg" alt="radar de habilidades técnicas">
+      <img src="assets/radar-domains-dark.svg" alt="radar de áreas de aplicación">
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="center">
+    <h2>En números</h2>
+    <div class="stats-block">
+      <img src="assets/card-stats-dark.svg" alt="estadísticas de GitHub" style="width:480px">
+      <p class="meta">(el gráfico de lenguajes más usados aparece aquí tras la primera corrida del workflow "Metrics")</p>
+    </div>
+
+    <h2>Proyectos destacados</h2>
+    <div class="cards-grid">
+      <img src="assets/card-H2V-Module-dark.svg" alt="H2V-Module">
+      <img src="assets/card-Okada-2D-dark.svg" alt="Okada-2D">
+      <img src="assets/card-Empirical-Orthogonal-Function-EOF--dark.svg" alt="Empirical-Orthogonal-Function-EOF-">
+      <img src="assets/card-Analisis-de-Datos-Oceanograficos-Magallanes-dark.svg" alt="Analisis-de-Datos-Oceanograficos-Magallanes">
+    </div>
+  </div>
+
+  <hr>
+
+  <h2>Contacto</h2>
+  <div class="contact">
+    <ul>
+      <li><b>Correo:</b> ipartarrieua@gmail.com</li>
+      <li><b>LinkedIn:</b> ignacio-partarrieu-andrade</li>
+      <li><b>MetGeo:</b> LinkedIn</li>
+    </ul>
+  </div>
+
+  <footer>Los radares y las tarjetas se generan con los scripts en scripts/ y se actualizan solos vía GitHub Actions cuando cambian los archivos en assets/*.json.</footer>
+
+</div>
+
+<script>
+(function(){
+  try{
+    var lines = [
+      "Ignacio Partarrieu - Geofísico",
+      "Modelación Geofísica · Energías Renovables",
+      "Python · MATLAB · Investigación Aplicada"
+    ];
+    var el = document.getElementById("typing-text");
+    var li = 0, ci = 0, deleting = false;
+    function tick(){
+      var line = lines[li];
+      el.textContent = deleting ? line.slice(0, ci--) : line.slice(0, ci++);
+      var done = !deleting && ci > line.length;
+      var back = deleting && ci < 0;
+      var delay = done ? 1100 : back ? 300 : 35;
+      if (done) deleting = true;
+      if (back) { deleting = false; li = (li + 1) % lines.length; ci = 0; }
+      setTimeout(tick, delay);
+    }
+    tick();
+  }catch(e){}
+})();
+</script>
