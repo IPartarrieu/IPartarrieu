@@ -296,7 +296,7 @@ def main(argv=None):
     args = p.parse_args(argv)
 
     if args.github:
-        token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+        token = (os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or "").strip() or None
         excl = {s.strip().lower() for s in args.exclude.split(",") if s.strip()}
         title, axes = from_github(args.github, token, args.limit, excl, args.curve)
     else:

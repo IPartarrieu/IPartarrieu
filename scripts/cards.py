@@ -296,7 +296,7 @@ def main(argv=None):
                    help="repos to render cards for, with description overrides")
     args = p.parse_args(argv)
 
-    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    token = (os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN") or "").strip() or None
     args.out.mkdir(parents=True, exist_ok=True)
 
     user = rest(f"/users/{args.user}", token)
