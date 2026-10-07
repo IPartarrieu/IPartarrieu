@@ -151,6 +151,19 @@ Geofísico y Magíster en Geofísica (mención en Modelación Geofísica, Univer
 
 </td>
 </tr>
+<tr>
+<td colspan="2" align="center">
+
+<a href="https://ipartarrieu.github.io/Rubiks-Cube-3D/">
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/card-Rubiks-Cube-3D-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/card-Rubiks-Cube-3D-light.svg">
+  <img src="assets/card-Rubiks-Cube-3D-dark.svg" width="420" alt="Rubiks-Cube-3D">
+</picture>
+</a>
+
+</td>
+</tr>
 </table>
 
 </div>
