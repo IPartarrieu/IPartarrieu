@@ -16,6 +16,10 @@
     {
       "repo": "Analisis-de-Datos-Oceanograficos-Magallanes",
       "description": "Clusterización de variables biogeoquímicas en el Pacífico sur (Magallanes), para el Instituto CEQUA."
+    },
+    {
+      "repo": "Rubiks-Cube-3D",
+      "description": "Cubo Rubik 3D interactivo: mézclalo y mira cómo lo resuelve el algoritmo de dos fases de Kociemba, giro a giro. Demo en GitHub Pages."
     }
   ]
 }
