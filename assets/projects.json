@@ -19,7 +19,7 @@
     },
     {
       "repo": "Rubiks-Cube-3D",
-      "description": "Cubo Rubik 3D interactivo: mézclalo y mira cómo lo resuelve el algoritmo de dos fases de Kociemba, giro a giro. Demo en GitHub Pages."
+      "description": "Cubo 3×3, 2×2, Pyraminx y Megaminx en 3D: mézclalos y mira cómo se resuelven giro a giro (Kociemba, búsqueda exacta y conmutadores). Demo en GitHub Pages."
     }
   ]
 }
